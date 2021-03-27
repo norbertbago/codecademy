@@ -18,3 +18,31 @@ def divisible_by_ten(nums):
 
 def add_greetings(names):
     return [('Hello, ' + name) for name in names]
+
+# Write a function called delete_starting_evens() that has a parameter named lst.
+# The function should remove elements from the front of lst until the front of
+# the list is not even. The function should then return lst.
+
+def delete_starting_evens(lst):
+    for item in lst:
+        if item%2!=0:
+            return lst[lst.index(item):]
+    return []
+
+# Create a function named odd_indices() that has one parameter named lst.
+# The function should create a new empty list and add every element from
+# lst that has an odd index. The function should then return this new list.
+
+def odd_indices(lst):
+    return [x for x in lst if lst.index(x)%2 != 0]
+
+# Create a function named exponents() that takes two lists as parameters named
+# bases and powers. Return a new list containing every number in bases raised
+# to every number in powers.
+
+def exponents(bases, powers):
+    new_lst = []
+    for base in bases:
+        for power in powers:
+            new_lst.append(base ** power)
+    return new_lst

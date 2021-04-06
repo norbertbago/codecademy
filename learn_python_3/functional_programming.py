@@ -1,4 +1,5 @@
-from functools import reduce
+from six.moves import reduce
+
 
 list_1 = range(9)
 list_2 = ["Hi", "Hello", "Cao", "Ahoj", "Cau", "Hola", "Halo"]
@@ -26,3 +27,5 @@ def product(a,b):
 print(reduce(reduce_sum, list_1))
 
 print(reduce(product, range(1,3)))
+
+print(reduce(lambda x,y: x+y, list_1))

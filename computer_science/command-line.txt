@@ -1,0 +1,17 @@
+-- Navigation 
+
+ls              list 
+pwd             print word directory 
+cd name         change directory 
+cd name/name    change path 
+cd ..           change dictionary up 
+cd ../name      change dictionary up to next 
+cd ../..
+mkdr media      make dictionary
+mkdr media/tv   make dictionary in media 
+touch text.txt  make new file 
+claer           clear window 
+
+
+echo            print text 
+echo "Hello Command Line" >> hello_cli.txt
